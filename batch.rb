@@ -32,6 +32,12 @@ module Slides
 
   # Enable exit from slides on ESC key presing
   ESC_SLIDES_ENABLED = true
+
+  # Length of fadeout effect between slides
+  FADEOUT_FRAMES = 20
+
+  # Length of fadein effect between slides
+  FADEIN_FRAMES = 20
 end
 
 #gems/slides/lib/slides/patch.rb
