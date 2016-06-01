@@ -120,10 +120,10 @@ class Slides::Scene < Scene_Base
   end
 
   def render(image_path, text, face_name = nil, face_index = nil)
-    Graphics.fadeout 10 unless @fast
+    Graphics.fadeout Slides::FADEOUT_FRAMES unless @fast
     show_image image_path 
     show_text text, face_name, face_index
-    Graphics.fadein 10 unless @fast
+    Graphics.fadein Slides::FADEIN_FRAMES unless @fast
     init_fast
   end
 
