@@ -7,7 +7,7 @@ class Slides::Scene < Scene_Base
     @current_slide = 0
     @sprite = Sprite.new
     @sprite.ox, @sprite.oy = 0, 0
-    @sprite.bitmap = Bitmap.new width, (height / 3) * 2
+    @sprite.bitmap = Bitmap.new width, height
     @with_text = false
     init_fast
     super
